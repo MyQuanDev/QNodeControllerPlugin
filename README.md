@@ -9,7 +9,7 @@ The QNode Controller Plugin connects Q-SYS Designer to QNode hardware over TCP. 
 - **Deploy UCIs** directly to the panel from Designer
 - **Control serial devices** via built-in RS232 and RS485
 - **Trigger relays** and digital outputs
-- **Set LED ring color** with 16 levels per RGB channel
+- **Set LED ring color** from over 4,000 colors
 - **Manage display settings** including brightness, sleep/wake, and screen timeout
 - **Monitor device status** including connection state and firmware version
 - **Detect motion** via QSense for automation triggers
@@ -25,12 +25,19 @@ All QNode panels use the same plugin. One plugin instance per panel.
 
 ## Installation
 
-1. Download the latest `.qplug` file from the [Releases](https://github.com/StealthTechCustomSolutions/QNodeControllerPlugin/releases) page
-2. Copy the `.qplug` file to your Q-SYS Designer plugin directory:
+Download the latest `.qplugx` file from the [Releases](https://github.com/MyQuanDev/QNodeControllerPlugin/releases) page.
+
+**Option A — Double-click (recommended):**
+1. Double-click the downloaded `.qplugx` file — Q-SYS Designer will install it automatically
+2. Restart Q-SYS Designer if it was already open
+
+**Option B — Manual install:**
+1. Copy the `.qplugx` file to your Q-SYS Designer plugin directory:
    - **Windows**: `%USERPROFILE%\Documents\QSC\Q-Sys Designer\Plugins\`
    - **macOS**: `~/Documents/QSC/Q-Sys Designer/Plugins/`
-3. Restart Q-SYS Designer
-4. The plugin appears in the schematic component list under **MyQuan**
+2. Restart Q-SYS Designer
+
+The plugin appears in the schematic component list under **MyQuan**.
 
 ## Quick Start
 
@@ -69,6 +76,6 @@ For technical support, sales inquiries, or feature requests:
 
 ## License
 
-Copyright 2026 StealthTech Custom Solutions LLC. All rights reserved.
+Copyright 2026 StealthTech Custom Solutions. All rights reserved.
 
 This plugin is provided free of charge for use with QNode hardware. Redistribution, modification, or reverse engineering is prohibited. See [LICENSE](LICENSE) for details.
