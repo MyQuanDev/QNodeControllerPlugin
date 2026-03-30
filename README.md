@@ -1,12 +1,12 @@
-# QNode Controller Plugin for Q-SYS
+# QNode Controller Plugin for the Q-SYS Ecosystem
 
-The official Q-SYS Designer plugin for QNode touchscreen panels by MyQuan.
+The official Q-SYS Designer® software plugin for QNode™ touchscreen panels by MyQuan™.
 
 ## What It Does
 
-The QNode Controller Plugin connects Q-SYS Designer to QNode hardware over TCP. From a single plugin instance, you can:
+The QNode Controller plugin connects Q-SYS® Designer software to QNode hardware over TCP. From a single plugin instance, you can:
 
-- **Deploy UCIs** directly to the panel from Designer
+- **Deploy Q-SYS UCI™ layouts** directly to the panel
 - **Control serial devices** via built-in RS232 and RS485
 - **Trigger relays** and digital outputs
 - **Set LED ring color** from over 4,000 colors
@@ -28,29 +28,29 @@ All QNode panels use the same plugin. One plugin instance per panel.
 Download the latest `.qplugx` file from the [Releases](https://github.com/MyQuanDev/QNodeControllerPlugin/releases) page.
 
 **Option A — Double-click (recommended):**
-1. Double-click the downloaded `.qplugx` file — Q-SYS Designer will install it automatically
-2. Restart Q-SYS Designer if it was already open
+1. Double-click the downloaded `.qplugx` file — Q-SYS Designer software will install it automatically
+2. Restart Q-SYS Designer software if it was already open
 
 **Option B — Manual install:**
 1. Copy the `.qplugx` file to your Q-SYS Designer plugin directory:
    - **Windows**: `%USERPROFILE%\Documents\QSC\Q-Sys Designer\Plugins\`
    - **macOS**: `~/Documents/QSC/Q-Sys Designer/Plugins/`
-2. Restart Q-SYS Designer
+2. Restart Q-SYS Designer software
 
 The plugin appears in the schematic component list under **MyQuan**.
 
 ## Quick Start
 
-1. Add a **QNode Controller** component to your schematic
+1. Add a **QNode Controller** component to your Q-SYS Designer schematic
 2. Enter the panel's IP address in the Settings tab
-3. Select a UCI from the dropdown and click Deploy
+3. Select a Q-SYS UCI layout from the dropdown and click Deploy
 4. Configure serial ports, relays, and other I/O as needed from the plugin tabs
 
 ## Plugin Tabs
 
 | Tab | Purpose |
 |-----|---------|
-| UCI | Deploy and manage UCI layouts |
+| UCI | Deploy and manage Q-SYS UCI layouts |
 | LED | Set LED ring color with presets or custom RGB |
 | Triggers | Control relays, digital outputs, and automation |
 | Serial | Configure and send/receive RS232 and RS485 data |
@@ -58,8 +58,8 @@ The plugin appears in the schematic component list under **MyQuan**.
 
 ## Requirements
 
-- Q-SYS Designer 9.x or later
-- Q-SYS Core on the same network as the QNode panel
+- Q-SYS Designer software 9.x or later
+- Q-SYS Core processor on the same network as the QNode panel
 - QNode panel running MyQuan OS
 
 ## Documentation
@@ -76,6 +76,10 @@ For technical support, sales inquiries, or feature requests:
 
 ## License
 
-Copyright 2026 StealthTech Custom Solutions. All rights reserved.
+Copyright 2026 StealthTech Custom Solutions LLC. All rights reserved.
 
 This plugin is provided free of charge for use with QNode hardware. Redistribution, modification, or reverse engineering is prohibited. See [LICENSE](LICENSE) for details.
+
+---
+
+<sub>Q-SYS and Q-SYS Designer are registered trademarks of QSC, LLC in the U.S. Patent and Trademark Office and other countries. Q-SYS UCI is a trademark of QSC, LLC. MyQuan and QNode are trademarks of StealthTech Custom Solutions LLC.</sub>
