@@ -1,4 +1,4 @@
-# QNode Controller Plugin for the Q-SYS Ecosystem
+# QNode Controller Plugin for the Q-SYS® Ecosystem
 
 The official Q-SYS Designer® software plugin for QNode™ touchscreen panels by MyQuan™.
 
