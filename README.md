@@ -56,13 +56,44 @@ For Q-SYS UCI layouts that use PIN authentication, set the **UCI Mode** property
 
 ## Plugin Tabs
 
-| Tab | Purpose |
-|-----|---------|
-| UCI | Auto-discover and deploy Q-SYS UCI layouts, or enter a token manually |
-| LED | Set LED ring color with presets or custom RGB |
-| Triggers | Control relays, digital outputs, and automation |
-| Serial | Configure and send/receive RS232 and RS485 data |
-| Settings | Display brightness, sleep timeout, firmware info, reboot |
+### UCI
+The main control page. Auto-discover and connect to QNode devices, browse and deploy Q-SYS UCI layouts, and manage display settings — all from one view.
+
+- **Device dropdown** — auto-populated list of QNode panels on the network
+- **UCI dropdown** — browse all available UCIs on the Core, or enter a token manually
+- **Deploy / Clear** — one-click UCI deployment and removal
+- **Brightness** — fader control (0–100%)
+- **Screen timeout** — configurable auto-sleep timer (seconds, 0 to disable)
+- **Screen fade** — toggle fade-to-black on sleep
+- **Sleep / Wake** — manual screen sleep and wake control
+- **Temperature / Humidity** — live sensor readout
+- **Motion detection** — enable/disable with adjustable sensitivity
+
+### LED
+Control the LED ring around the panel bezel.
+
+- **8 color presets** — Red, Green, Blue, Yellow, Purple, Cyan, White, Off
+- **RGB faders** — fine control with individual Red, Green, Blue channels (0–15 each, 4,096 combinations)
+
+### Triggers
+Control physical relay outputs and digital I/O.
+
+- **Relay 1 / Relay 2** — toggle on/off for dry contact switching
+- **IO 1 / IO 2** — digital output high/low
+
+### Serial
+Communicate with external devices via built-in serial ports.
+
+- **RS232 and RS485** — independent columns with baud rate, open/close, send, and receive log
+- **Scriptable TX/RX pins** — integrate serial communication into Q-SYS scripting workflows
+- **Manual send** — type and send data for commissioning and testing
+
+### Settings
+Device information and maintenance.
+
+- **Plugin version** and device model
+- **Firmware version**, **MAC address**, and **uptime**
+- **Reboot** — remote device restart
 
 ## Requirements
 
