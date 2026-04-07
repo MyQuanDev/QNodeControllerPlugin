@@ -6,7 +6,9 @@ The official Q-SYS Designer® software plugin for QNode™ touchscreen panels by
 
 The QNode Controller plugin connects Q-SYS® Designer software to QNode hardware over TCP. From a single plugin instance, you can:
 
-- **Deploy Q-SYS UCI™ layouts** directly to the panel
+- **Auto-discover QNode devices** on the network — no manual IP entry needed
+- **Browse and deploy Q-SYS UCI™ layouts** from a dropdown of all available UCIs on your Core
+- **Use UCI tokens** for layouts that require authentication bypass
 - **Control serial devices** via built-in RS232 and RS485
 - **Trigger relays** and digital outputs
 - **Set LED ring color** from over 4,000 colors
@@ -42,19 +44,25 @@ The plugin appears in the schematic component list under **MyQuan**.
 ## Quick Start
 
 1. Add a **QNode Controller** component to your Q-SYS Designer schematic
-2. Enter the panel's IP address in the Settings tab
-3. Select a Q-SYS UCI layout from the dropdown and click Deploy
+2. Your QNode panel appears automatically in the **Device** dropdown — select it and the plugin connects
+3. Choose a Q-SYS UCI layout from the **UCI** dropdown — it auto-deploys to the panel
 4. Configure serial ports, relays, and other I/O as needed from the plugin tabs
+
+No IP addresses to look up. No UCI tokens to copy. Just pick your device and pick your layout.
+
+### Advanced: UCI Token Mode
+
+For Q-SYS UCI layouts that use PIN authentication, set the **UCI Mode** property to **Token** in Q-SYS Designer. This lets you enter a UCI token directly, bypassing the PIN prompt on the panel.
 
 ## Plugin Tabs
 
 | Tab | Purpose |
 |-----|---------|
-| UCI | Deploy and manage Q-SYS UCI layouts |
+| UCI | Auto-discover and deploy Q-SYS UCI layouts, or enter a token manually |
 | LED | Set LED ring color with presets or custom RGB |
 | Triggers | Control relays, digital outputs, and automation |
 | Serial | Configure and send/receive RS232 and RS485 data |
-| Settings | IP address, display brightness, sleep timeout, firmware info |
+| Settings | Display brightness, sleep timeout, firmware info, reboot |
 
 ## Requirements
 
